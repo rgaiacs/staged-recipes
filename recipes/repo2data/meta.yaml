@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=64
     - setuptools-scm >=8
     - pip
   run:
-    - python >=3.7
+    - python {{ python_min }}
     - awscli
     - patool
     - datalad
@@ -48,4 +48,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - @rgaiacs
+    - rgaiacs
